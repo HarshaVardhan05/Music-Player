@@ -93,6 +93,9 @@ def prevsong(event):
     if index != 0:
         index -= 1
         pygame.mixer.music.load(listofsongs[index])
+    elif index ==0:
+        index = 0
+        pygame.mixer.music.load(listofsongs[index])    
     else:
         index = len(listofsongs) - 1
         pygame.mixer.music.load(listofsongs[index])
